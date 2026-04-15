@@ -1,17 +1,19 @@
 // TODO: 1. Select #menu-toggle and #nav-menu using document.querySelector
 
-// TODO: 2. Add a click event listener to #menu-toggle
-// Inside the listener, toggle the "hidden" class on #nav-menu
-// Hint: element.classList.toggle("hidden")
+const menuToggle = document.querySelector("#menu-toggle");
+const navMenu = document.querySelector("#nav-Menu");
+const alertButton = document.querySelector("#alert-btn");
 
-// TODO: 3. Select #alert-btn
+menuToggle.addEventListener("click", function() 
+  {navMenu.classList.toggle("hidden");
 
-// TODO: 4. Add a click event listener that shows an alert("Hello from JavaScript!")
+    if (navMenu.classList.contains("hidden")) {
+        menuToggle.textContent = "☰ Menu";
+    } else {
+        menuToggle.textContent = "Close Menu"; 
+    }
+    });
 
-// TODO: 5. Introduce an intentional bug (optional) and ask AI to help debug
-
-// TODO: 6. Stretch goal: Add any extra interaction
-// Example ideas:
-// - Change button text when menu is open
-// - Animate menu with CSS classes
-// - Console-log every click on the page
+alertButton.addEventListener("click", function() {
+    alert("Hello from JavaScript!")
+});
