@@ -1,5 +1,3 @@
-// TODO: 1. Select #menu-toggle and #nav-menu using document.querySelector
-
 const menuToggle = document.querySelector("#menu-toggle");
 const navMenu = document.querySelector("#nav-Menu");
 const alertButton = document.querySelector("#alert-btn");
